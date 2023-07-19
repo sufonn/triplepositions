@@ -21,6 +21,16 @@ pipelines:
           script:
             - echo "Your security scan goes here..."
 
+    - step:
+        name: Sync GitHub Mirror
+        image: alpine/git:latest
+        clone:
+          enabled: false
+        script:
+          - git clone --bare git@bitbucket.org:sufonn/main-site.git
+          - cd main-site.git
+          - git push --mirror git@github.com:sufonn/triplepositions.git
+          
     # The following deployment steps will be executed for each pipeline run. To configure your steps and conditionally deploy see https://support.atlassian.com/bitbucket-cloud/docs/configure-bitbucket-pipelinesyml/
     - step:
         name: 'Deployment to Staging'
