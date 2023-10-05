@@ -1,10 +1,12 @@
-import Header from '@/layouts/header/header'
-import '../styles/index.scss'
+
+import Header from "@/layouts/header"
+import Footer from "@/layouts/footer"
 
 export default function Home() {
   return (
-    <main >
+    <div>
       <Header />
-    </main>
+      <Footer />
+    </div>
   )
 }
