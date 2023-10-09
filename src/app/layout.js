@@ -1,8 +1,9 @@
 // import './globals.css'
 import { Roboto_Mono } from 'next/font/google'
+import "../styles/index.scss"
 
 const roboto_mono = Roboto_Mono({
-  weight: ['400', '500', '700'],
+  weight: ['400', '500', '600', '700'],
   style: ['normal', 'italic'],
   subsets: ['latin'],
   display: 'swap',

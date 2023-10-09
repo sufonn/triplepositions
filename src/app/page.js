@@ -1,11 +1,14 @@
+"use client"
 
-import Header from "@/layouts/header"
-import Footer from "@/layouts/footer"
+import Header from "@/layouts/header";
+import MobileMenu from "@/layouts/mobileMenu";
+import Footer from "@/layouts/footer";
 
 export default function Home() {
   return (
-    <div>
+    <div className="wraper">
       <Header />
+      <MobileMenu />
       <Footer />
     </div>
   )
