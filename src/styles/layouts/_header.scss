@@ -1,8 +1,8 @@
 .header {
     position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 10;
     padding: 25px 0px;
     transition: all 0.3s ease;
@@ -15,10 +15,12 @@
     }
 
     .animate {
-        background-color: white;
+        background-color: #FFFFFF;
         padding: 20px 0px;
         box-shadow: 0px 0px 10px rgba($color: #000000, $alpha: 0.1);
     }
+
+    // logo img //
 
     .logo {
         img {
@@ -27,6 +29,7 @@
         }
     }
 
+    // menu //
     .menu {
         ul {
             margin: 0px;
@@ -36,11 +39,11 @@
 
             li {
                 margin: 0px 48px 0px 0px;
-                display: inline;
+                display: inline-block;
 
-                &:last-child { margin-right: 0px; }
+                &:last-child {margin-right: 0px;}
                 &.current a,
-                a:hover{
+                a:hover {
                     color: map-get($map: $colors, $key: "lightblue");
                 }
 
@@ -48,10 +51,50 @@
                     text-decoration: none;
                     color: map-get($map: $colors, $key: "blue");
                     font-weight: 500;
-                    font-size: 1rem;
+                    //font-family: 
                     transition: all 0.3s ease;
                 }
             }
+        }
+    }
+
+    // download button
+    .download {
+        position: relative;
+        top: 3px;
+
+        a {
+            border: 2px solid map-get($map: $colors, $key: "blue");
+            border-radius: 50px;
+            padding: 8px 35px 7px 35px;
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            text-decoration: none;
+
+            &::before {
+                position: absolute;
+                content: "";
+                z-index: 0;
+                background-color: map-get($map: $colors, $key: "blue");
+                left: -5px;
+                right: -5px;
+                bottom: -5px;
+                height: 0px;
+
+                transition: all 0.3s ease;
+            }
+
+            &:hover{
+                span {color: #FFFFFF;}
+                &::before {height: 115%;}
+            }
+        }
+
+        span {
+            position: relative;
+            z-index: 2;
+            transition: all 0.3s ease;
         }
     }
 }

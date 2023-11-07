@@ -19,6 +19,9 @@ const Header = () => {
                             <li><Link href="#contact">Contact</Link></li>
                         </ul>
                     </div>
+                    <div className="download">
+                        <Link href="#"><span>Download</span></Link>
+                    </div>
                 </div>
             </div>
         </div>
