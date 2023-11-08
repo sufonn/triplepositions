@@ -1,30 +1,18 @@
-const preloader_check = () => {
-    let isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(
-        navigator.userAgent
-    ) 
-    
-    ? true
-    : false;
+export const fetchData = async (url) => {
+    console.log(url)
+    const res = await fetch(`${url}`);
+    const data = await res.json();
 
-    let preloader = document.getElementById("preloader");
-
-    if (preloader) {
-        if (!isMobile) {
-            setTimeout(function() {
-                preloader.classList.add("preloader");
-            }, 800);
-            setTimeout(function () {
-                preloader.remove();
-            }, 2000);
-        } else {
-            preloader.remove();
-        }
-    }
+    return data
 }
 
-export  const preloader = () => {
-    preloader_check();
-    setTimeout(() => {
-        document.querySelector("body").classList.add("opened");
-    }, 3000);
+export const dataImage = () => {
+    let img = document.querySelectorAll("[data-img-url");
+    console.log(img)
+    for(let i=0; i<img.length; i++) {
+        const element = img[i];
+        element.style.backgroundImage = `url(${element.getAttribute(
+            "data-img-url"
+          )})`
+    }
 }

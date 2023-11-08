@@ -1,0 +1,33 @@
+.hero {
+    width: 100%;
+    height: 100hv;
+    clear: both;
+    float: left;
+    position: relative;
+    margin-bottom: 190px;
+
+    .backgroud {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .container {
+        height: 100%;
+    }
+
+    .content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    
+}

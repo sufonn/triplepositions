@@ -1,0 +1,23 @@
+{
+    "name": "Surangkhanang Jitworajinda",
+    "address": "Bangkhen, Bangkok",
+    "bio": "",
+    "mainSkill": "Front-End Developer",
+    "img": "",
+    "skills": [
+        {
+            "name": "react",
+            "icon": "",
+            "color": "",
+            "value": 70
+        }
+    ],
+    "social": [
+        {"name": "linkedin", "icon": "", "url": ""},
+        {"name": "github", "icon": "", "url": ""} 
+    ],
+    "contact": {
+        "email": "surangkhanang.j@hotmail.com",
+        "phone": "+66 80 9964456" 
+    }
+}

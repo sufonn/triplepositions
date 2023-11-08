@@ -1,13 +1,4 @@
-// import './globals.css'
-import { Roboto_Mono } from 'next/font/google'
-import "../styles/index.scss"
-
-const roboto_mono = Roboto_Mono({
-  weight: ['400', '500', '600', '700'],
-  style: ['normal', 'italic'],
-  subsets: ['latin'],
-  display: 'swap',
-})
+import "../../styles/index.scss";
 
 export const metadata = {
   title: 'triplepositons',
@@ -15,9 +6,10 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+
   return (
     <html lang="en">
-      <body className={roboto_mono.className}>{children}</body>
+      <body>{children}</body>
     </html>
   )
 }
