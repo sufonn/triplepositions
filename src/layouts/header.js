@@ -1,5 +1,7 @@
 import Link from "next/link";
-import { jost } from "@/app/fonts";
+import Image from "next/image";
+import { dm_sans } from "@/app/fonts";
+import logo from "public/images/logo/logo.svg";
 
 const Header = () => {
     return (
@@ -8,10 +10,13 @@ const Header = () => {
                 <div className="inner">
                     <div className="logo">
                         <Link href="/">
-                            <img />
+                            <Image 
+                                src={logo}
+                                alt="logo"
+                            />
                         </Link>
                     </div>
-                    <div className={jost.className + " menu"}>
+                    <div className={dm_sans.className + " menu"}>
                         <ul className="anchor_nav">
                             <li className="current">
                                 <Link href="#home">Home</Link>
@@ -22,7 +27,7 @@ const Header = () => {
                             <li><Link href="#contact">Contact</Link></li>
                         </ul>
                     </div>
-                    <div className={jost.className + " download"}>
+                    <div className={dm_sans.className + " download"}>
                         <Link href="#"><span>Download</span></Link>
                     </div>
                 </div>

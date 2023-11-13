@@ -24,7 +24,7 @@
     .logo {
         img {
             max-width: 150px;
-            max-height: 80px;
+            max-height: 60px;
         }
     }
 
@@ -50,6 +50,7 @@
                     text-decoration: none;
                     color: $primary-color;
                     font-weight: 500;
+                    font-size: 18px;
                     transition: all 0.3s ease;
                 }
             }

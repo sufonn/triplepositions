@@ -21,7 +21,7 @@ const HomePage = () => {
                     <div className="content">
                         <div className="details">
                             <div className="greeting">
-                                <h3>rrrr</h3>
+                                <h3></h3>
                             </div>
                         </div>
                     </div>
