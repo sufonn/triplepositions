@@ -1,0 +1,43 @@
+.button {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+
+    a {
+        text-decoration: none;
+        font-weight: 500;
+        color: $white;
+        display: inline-block;
+        border-radius: 50px;
+        border: 2px solid $primary-color;
+        padding: 14px 48px 13px 48px;
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+            position: absolute;
+            content: "";
+            z-index: 0;
+            background-color: $primary-color;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            height: 110%;
+            transition: all 0.3s ease;
+        }
+
+        &:hover {
+            &::before {height: 0;}
+            span {
+                color: $black;
+            }
+        }
+    }
+
+    span {
+        position: relative;
+        z-index: 2;
+        transition: all 0.3s ease;
+    }
+}

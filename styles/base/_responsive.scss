@@ -1,0 +1,153 @@
+@media (max-width: 1600px) {
+    body {font-size: 16px;}
+    .container {max-width: 1170px;}
+    .header {
+        padding: 15px 0px;
+        
+        .animate {
+            padding: 10px 0px;
+        }
+        .download {
+            a {padding: 5px 25px 4px 25px;}
+        }
+        .logo {
+            img {
+                max-width: 110px;
+                max-height: 50px;
+            }
+        }
+        .menu {
+            ul {
+                li {margin-right: 30px;}
+            }
+        }
+    }
+    .hero {
+        .greeting {
+            h3 {font-size: 25px;}
+        }
+        .name {
+            margin-bottom: 13px;
+
+            h3 {font-size: 60px;}
+        }
+        .job {
+            margin-bottom: 23px;
+
+            p {font-size: 19px;}
+        }
+        .text {
+            margin-bottom: 30px;
+
+            p {font-size: 16px;}
+        }
+        .social {
+            padding-left: 24px;
+        }
+        .avatar {
+            img {max-height: 400px;}
+        }
+        .skills {
+            width: 50px;
+            height: 50px;
+
+            .svg {
+                width: 25px;
+                height: 25px;
+            }
+
+            .left {
+                left: -20px;
+            }
+
+            .right {
+                right: 110px;
+            }
+
+            .bottom {
+                bottom: 20px;
+                left: 100px;
+            }
+        }
+    }
+    .button {
+        a {padding: 9px 35px 8px 35px;}
+    }
+    .down {
+        bottom: 30px;
+    }
+}
+
+@media (max-width: 1040px) {
+    .container {padding: 0px 20px;}
+    .header {display: none;}
+    .hero {
+        .content {
+            flex-direction: column-reverse;
+            justify-content: center;
+        }
+        .details {
+            width: 100%;
+            padding-right: 0px;
+            text-align: center;
+        }
+        .greeting {
+            h3 {font-size: 25px;}
+        }
+        .name {
+            h3 {font-size: 55px;}
+        }
+        .job {
+            margin-bottom: 23px;
+
+            p {font-size: 23px;}
+        }
+        .text {
+            margin-bottom: 30px;
+
+            p {font-size: 20px;}
+        }
+        .avatar {
+            padding: 0px;
+            width: auto;
+            margin-bottom: 30px;
+
+            img {
+                max-width: 300px;
+                max-height: 300px;
+            }
+        }
+        .skills {display: none;}
+        .btn-group {justify-content: center;}
+    }
+    .down {bottom: 20px;}
+}
+
+@media (max-width: 768px) {
+    .hero {
+        margin-bottom: 135px;
+        .greeting {
+            h3 {font-size: 21px;}
+        }
+        .name {
+            h3 {font-size: 42px;}
+        }
+        .job {
+            margin-bottom: 15px;
+
+            p {font-size: 18px;}
+        }
+        .text {
+            p {font-size: 16px;}
+        }
+        .social {
+            padding-left: 15px;
+        }
+        .avatar {
+            img {
+                max-width: 220px;
+                max-height: 220px;
+            }
+        }
+    }
+}

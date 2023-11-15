@@ -1,7 +1,13 @@
 @import "./variables";
+@import "./clear-style";
 
-@import "./layouts/pages";
+@import "./layouts/base";
 @import "./layouts/header";
-@import "./layouts/mobile-menu";
 
+@import "./components/button";
+@import "./components/form";
+@import "./components/loader";
 @import "./components/hero";
+
+@import "./base/text";
+@import "./base/responsive";

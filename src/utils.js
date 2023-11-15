@@ -1,5 +1,4 @@
 export const fetchData = async (url) => {
-    console.log(url)
     const res = await fetch(`${url}`);
     const data = await res.json();
 
@@ -8,11 +7,10 @@ export const fetchData = async (url) => {
 
 export const dataImage = () => {
     let img = document.querySelectorAll("[data-img-url");
-    console.log(img)
     for(let i=0; i<img.length; i++) {
         const element = img[i];
         element.style.backgroundImage = `url(${element.getAttribute(
             "data-img-url"
-          )})`
+        )})`
     }
 }

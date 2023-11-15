@@ -1,12 +1,12 @@
 .hero {
     width: 100%;
-    height: 100hv;
+    height: 100vh;
     clear: both;
     float: left;
     position: relative;
     margin-bottom: 190px;
 
-    .backgroud {
+    .background {
         position: absolute;
         top: 0px;
         bottom: 0px;
@@ -29,5 +29,134 @@
         justify-content: space-between;
     }
 
+    .details {
+        width: 50%;
+        padding-right: 20px;
+    }
+
+    .greeting {
+        h3 {font-size: 45px;}
+    }
+    .name {
+        margin-bottom: 18x;
+
+        h3 {font-size: 85px;}
+    }
+    .job {
+        margin-bottom: 35px;
+
+        p {
+            font-size: 28px;
+            color: $black;
+            font-weight: 500;
+        }
+    }
+    .text {
+        margin-bottom: 42px;
+
+        p {
+            font-size: 23px;
+            line-height: 1.5;
+        }
+    }
+    .social {
+        padding-left: 27px;
+        position: relative;
+        top: -4px;
+
+        ul {
+            margin: 0px;
+            list-style-type: none;
+
+            li {
+                margin: 0px 5px 0px 0px;
+                display: inline-block;
+
+                &:last-child {margin-right: 0px;}
+                a {
+                    text-decoration: none;
+                    color: $black;
+                }
+            }
+        }
+    }
+    .image {position: relative;}
+    .avatar {
+        width: 50%;
+        padding-left: 100px;
+
+        img {max-height: 650px;}
+    }
+    .skills {
+        display: inline-block;
+        width: 75px;
+        height: 75px;
+        border-radius: 8px;
+        position: absolute;
+        box-shadow: 24px 0px 72px rgba(54, 32, 152, 0.1);
     
+        .svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40px;
+            height: 40px;
+        }
+        .left {
+            background-color: $black;
+            top: 20px;
+            left: -30px;
+
+            // .svg {color:}
+        }
+        .right {
+            background-color: $black;
+            right: 70px;
+            top: 80px;
+
+            // .svg {color:}
+        }
+        .bottom {
+            background-color: $white;
+            bottom: 60px;
+            left: 140px;
+
+            // .svg {color:}
+        }
+    }
+    .btn-group {
+        display: flex;
+        align-items: center;
+    }
+    .button {
+        width: auto;
+    }
+}
+
+// scroll down //
+.down {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 60px;
+    z-index: 5;
+
+    svg {
+        width: 35px !important;
+        height: 35px !important;
+
+        #wheel {
+            animation: scroll ease 2s infinite;
+        }
+    }
+}
+
+@keyframes scroll {
+    0% {
+      transform: translateY(0);
+    }
+    30% {
+      transform: translateY(60px);
+    }
 }

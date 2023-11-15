@@ -1,9 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
+
 import { dm_sans } from "@/app/fonts";
 import logo from "public/images/logo/logo.svg";
 
 const Header = () => {
+
     return (
         <div className="header">
             <div className="container">

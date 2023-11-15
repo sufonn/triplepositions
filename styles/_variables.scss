@@ -1,14 +1,13 @@
 $colors: (
-    "violet":     #A682FF,
-    "purple":     #715AFF,
-    "darkpurple": #0A0046,
     "lightblue":  #55C1FF,
     "blue":       #5887FF,
-    "darkblue":   #001958,
+    "purple":     #715AFF,
+    "darkpurple": #0A0046,
     "neon":       #63FD88,
     "green":      #33C58E,
     "darkgreen":  #276174,
     "teal":       #2999AD, //3BB2B8
+    "violet":     #A682FF,
     "yellow":     #FFBE0B,
     "orange":     #FB5607,
     "red":        #FF3333,
@@ -16,6 +15,7 @@ $colors: (
 );
 
 $white: #FFFFFF;
+$grey:  #696969;
 $black: #000000;
 $primary-color:     map-get($map: $colors, $key: "blue");
 $secondary-color:   map-get($map: $colors, $key: "lightblue");
