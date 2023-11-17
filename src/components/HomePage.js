@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { fetchData } from "@/utils";
-import { dm_serif_disp, source_code_pro } from "@/app/fonts";
 
 const HomePage = () => {
     const [data, setData] = useState({});
@@ -22,10 +21,13 @@ const HomePage = () => {
                         <div className="content">
                             <div className="details">
                                 <div className="greeting">
-                                    <h3 className={dm_serif_disp.className + " pinkText"}>{`Hello, I'm`}</h3>
+                                    <h3 className="pinkText">{`Hello, I'm`}</h3>
                                 </div>
                                 <div className="name">
-                                    <h3 className={source_code_pro.className + " darkPurpleText"}>{data && data.name ? data.name : "name"}</h3>
+                                    <h3 className="darkPurpleText">{data && data.name ? data.name : "name"}</h3>
+                                </div>
+                                <div className="job">
+                                    <p></p>
                                 </div>
                             </div>
                         </div>

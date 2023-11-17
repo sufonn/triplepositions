@@ -40,7 +40,10 @@
     .name {
         margin-bottom: 18x;
 
-        h3 {font-size: 85px;}
+        h3 {
+            font-family: $source-pro;
+            font-size: 85px;
+        }
     }
     .job {
         margin-bottom: 35px;
