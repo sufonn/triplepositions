@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import { dm_sans } from "@/app/fonts";
 import logo from "public/images/logo/logo.svg";
 
 const Header = () => {
@@ -18,7 +17,7 @@ const Header = () => {
                             />
                         </Link>
                     </div>
-                    <div className={dm_sans.className + " menu"}>
+                    <div className="menu">
                         <ul className="anchor_nav">
                             <li className="current">
                                 <Link href="#home">Home</Link>
@@ -27,10 +26,8 @@ const Header = () => {
                             <li><Link href="#experiences">Experinces</Link></li>
                             <li><Link href="#portfolio">Portfolio</Link></li>
                             <li><Link href="#contact">Contact</Link></li>
+                            <li className="download"><Link href="#"><span>Download</span></Link></li>
                         </ul>
-                    </div>
-                    <div className={dm_sans.className + " download"}>
-                        <Link href="#"><span>Download</span></Link>
                     </div>
                 </div>
             </div>

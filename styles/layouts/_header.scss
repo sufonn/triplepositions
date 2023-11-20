@@ -31,6 +31,8 @@
 
     // menu //
     .menu {
+        font-family: $dmsans;
+
         ul {
             margin: 0px;
             list-style-type: none;
@@ -45,14 +47,13 @@
                 &:last-child {margin-right: 0px;}
                 &.current a,
                 a:hover {
-                    color: $secondary-color;
+                    color: $primary-color;
                 }
 
                 a {
                     text-decoration: none;
-                    color: $primary-color;
-                    font-weight: 500;
-                    font-size: 18px;
+                    color: map-get($map: $colors, $key: "darkpurple");
+                    font-weight: 600;
                     transition: all 0.3s ease;
                 }
             }
@@ -61,6 +62,7 @@
 
     // download button
     .download {
+        font-family: $dmsans;
         position: relative;
         top: 3px;
 
@@ -68,7 +70,7 @@
             position: relative;
             z-index: 2;
             transition: all 0.3s ease;
-            color: $primary-color;
+            color: map-get($map: $colors, $key: "darkpurple");
         }
 
         a {

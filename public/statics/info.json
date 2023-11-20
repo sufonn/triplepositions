@@ -1,12 +1,27 @@
 {
     "name": "Surangkhanang Jitworajinda",
-    "address": "Bangkhen, Bangkok",
+    "address": "Bangkok",
     "bio": "",
     "mainSkill": "Front-End Developer",
     "img": "",
     "skills": [
         {
             "name": "react",
+            "classname": "left",
+            "icon": "",
+            "color": "",
+            "value": 70
+        },
+        {
+            "name": "react",
+            "classname": "right",
+            "icon": "",
+            "color": "",
+            "value": 70
+        },
+        {
+            "name": "react",
+            "classname": "bottom",
             "icon": "",
             "color": "",
             "value": 70

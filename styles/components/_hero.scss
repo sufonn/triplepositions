@@ -49,15 +49,17 @@
         margin-bottom: 35px;
 
         p {
+            font-family: $jost;
             font-size: 28px;
-            color: $black;
             font-weight: 500;
+            color: $black;
         }
     }
     .text {
         margin-bottom: 42px;
 
         p {
+            font-family: $jost;
             font-size: 23px;
             line-height: 1.5;
         }
@@ -133,6 +135,7 @@
         align-items: center;
     }
     .button {
+        font-family: $jost;
         width: auto;
     }
 }

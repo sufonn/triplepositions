@@ -26,8 +26,8 @@ $colors: (
 $white: #FFFFFF;
 $grey:  #696969;
 $black: #000000;
-$primary-color:     map-get($map: $colors, $key: "blue");
-$secondary-color:   map-get($map: $colors, $key: "lightblue");
+$primary-color:     map-get($map: $colors, $key: "purple");
+$secondary-color:   map-get($map: $colors, $key: "blue");
 $success-color:     map-get($map: $colors, $key: "green");
 $danger-color:      map-get($map: $colors, $key: "red");
 $warning-color:     map-get($map: $colors, $key: "orange");
