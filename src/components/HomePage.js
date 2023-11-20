@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import { parseUrl } from "next/dist/shared/lib/router/utils/parse-url";
 import parse from "html-react-parser";
 import { fetchData } from "@/utils";
 
@@ -23,8 +22,8 @@ const HomePage = () => {
             <div className="hero">
                 <div
                     className="background"
-                    data-img-url={"images/backgroud/white.jpg"}
-                    style={{backgroundImage: "images/backgroud/white.jpg"}}
+                    // data-img-url={"images/backgroud/white.jpg"}
+                    // style={{backgroundImage: "images/backgroud/white.jpg"}}
                 >
                     <div className="container">
                         <div className="content">
@@ -37,8 +36,7 @@ const HomePage = () => {
                                 </div>
                                 <div className="job">
                                     <p>
-                                        A <span className="orangeText"> {data && data.mainSkill} </span> {" "}
-                                        From <span>{data && data.address}</span>
+                                        A <span className="orangeText"> {data && data.mainSkill} </span>
                                     </p>
                                 </div>
                                 <div className="text">
@@ -73,13 +71,19 @@ const HomePage = () => {
                                 </div>
                                 {data &&
                                     data.skills &&
-                                    data.skills.map((skill, el) => 
+                                    data.skills.map((skill, el) =>
                                         skill.icon && (
                                             <span
                                                 key={el}
                                                 className={`skills ${skill.classname} anim_moveBottom`}
                                             >
-                                            {parse(skill.icon)}
+                                            {/* {parse(skill.icon)} */}
+                                            <Image 
+                                                src={skill.icon}
+                                                alt={skill.name}
+                                                width={50}
+                                                height={50}
+                                            />
                                             </span>
                                         )
                                     )

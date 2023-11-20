@@ -1,6 +1,5 @@
 {
-    "name": "Surangkhanang Jitworajinda",
-    "address": "Bangkok",
+    "name": "Surangkhanang",
     "bio": "",
     "mainSkill": "Front-End Developer",
     "img": "",
@@ -8,21 +7,21 @@
         {
             "name": "react",
             "classname": "left",
-            "icon": "",
+            "icon": "/images/skills/react.svg",
             "color": "",
             "value": 70
         },
         {
-            "name": "react",
+            "name": "node ",
             "classname": "right",
             "icon": "",
             "color": "",
             "value": 70
         },
         {
-            "name": "react",
+            "name": "figma ",
             "classname": "bottom",
-            "icon": "",
+            "icon":"/images/skills/figma.svg",
             "color": "",
             "value": 70
         }
