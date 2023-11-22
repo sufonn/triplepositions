@@ -14,7 +14,7 @@
         {
             "name": "node ",
             "classname": "right",
-            "icon": "",
+            "icon": "/images/skills/nodejs.svg",
             "color": "",
             "value": 70
         },

@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 import parse from "html-react-parser";
 import { fetchData } from "@/utils";
@@ -63,9 +62,9 @@ const HomePage = () => {
                                 </div>
                             </div>
                             <div className="avatar">
-                                <div>
-                                    <Image 
-                                        // src={}
+                                <div className="image">
+                                    <img 
+                                        src="/images/avatar.png"
                                         alt="avatar"
                                     />
                                 </div>
@@ -77,12 +76,10 @@ const HomePage = () => {
                                                 key={el}
                                                 className={`skills ${skill.classname} anim_moveBottom`}
                                             >
-                                            {/* {parse(skill.icon)} */}
-                                            <Image 
+                                            <img 
                                                 src={skill.icon}
                                                 alt={skill.name}
-                                                width={50}
-                                                height={50}
+                                                className="svg"
                                             />
                                             </span>
                                         )
